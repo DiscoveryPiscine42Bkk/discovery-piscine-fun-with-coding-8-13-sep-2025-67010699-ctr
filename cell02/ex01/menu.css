@@ -1,0 +1,30 @@
+body ,html{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.flexbox{
+    display: flex;
+    height: 100px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.flexbox div{
+    color: white;
+}
+
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+select{
+    width: 250px;
+    text-align: center;
+    background-color: rgb(30, 144, 210);
+}

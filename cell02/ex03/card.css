@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.invisible-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invisible-table td {
+    border: none;
+    padding: 10px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.login {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.description {
+    font-style: italic;
+    color: #555;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.contact-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contact-btn:hover {
+    background: #45a049;
+}
