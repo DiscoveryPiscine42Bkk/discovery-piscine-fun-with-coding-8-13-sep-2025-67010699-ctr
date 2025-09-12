@@ -1,0 +1,201 @@
+/* Custom Styles */
+
+:root {
+  --primary-color: #0078ff;
+  --secondary-color: #1e4356;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    padding-top: 72px;
+    min-height: 100vh;
+    display: block !important;
+    overflow-x: hidden;
+}
+
+/* Critical Display Fixes */
+.hero {
+    display: flex !important;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgba(85,245,221,1) 100.2% );
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-top: 80px; /* Increase this value if needed */
+}
+
+.container {
+    display: block !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hero-img {
+  width: 250px;  /* Increased from 200px */
+  height: 250px;  /* Increased from 200px */
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-pic {
+  width: 70%;
+  height: 280px;  /* Slightly reduced from 300px */
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: rotate(-2deg);
+}
+
+/* Navbar */
+.navbar {
+  background: #333333;
+  padding: 25px 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  color: white !important;
+}
+
+.navbar-shrink {
+  padding: 15px 0;
+  background: rgba(211, 211, 211, 0.95);
+}
+
+.navbar-shrink.navbar-dark .navbar-brand,
+.navbar-shrink.navbar-dark .nav-link {
+  color: #333 !important;
+}
+
+.nav-link {
+  padding: 0 1rem !important;
+  transition: all 0.3s ease-in-out;
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Section Styling */
+.section-bg {
+  background: #f5f5f5;
+  padding: 60px 0;  /* Reduced from 80px */
+}
+
+.section-white {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.line-mf {
+  width: 40px;
+  height: 5px;
+  background: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.btn-primary:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Social Media Icons */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.btn.social-btn {
+  padding: 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+/* Animation */
+[data-aos] {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Fallback styles */
+img[src=""] {
+    display: none;
+}
+
+.section-bg, .section-white {
+    display: block !important;
+    width: 100%;
+}
+
+/* About Section */
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 15px;
+}
